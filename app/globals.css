@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply min-h-screen bg-smoke text-white;
+}
+
+html[data-theme='imperio'] body {
+  background-image: radial-gradient(circle at 15% 20%, rgba(193, 18, 31, 0.25), transparent 45%),
+    radial-gradient(circle at 80% 10%, rgba(193, 18, 31, 0.12), transparent 30%),
+    linear-gradient(120deg, #05070d, #1a0b0d 65%, #05070d);
+}
+
+html[data-theme='imperio'] .theme-accent {
+  color: #ff6b6b;
+}
